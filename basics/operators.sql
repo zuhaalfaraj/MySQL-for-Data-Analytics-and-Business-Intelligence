@@ -37,3 +37,31 @@ SELECT
 FROM
     employees
 WHERE first_name NOT LIKE ('Mar__') ;
+
+-- BETWEEN ... AND
+SELECT 
+	*
+ FROM 
+	employees
+WHERE 
+	hire_date BETWEEN '1990-01-01' AND '2000-01-01';
+    
+    
+-- NULL // NOT NULL 
+SELECT 
+	*
+FROM 
+	employees
+WHERE 
+	first_name IS NULL;
+    
+    
+-- Mathmatical Operators
+
+SELECT 
+	*
+FROM 
+	employees
+WHERE 
+	hire_date >= '2000-01-01';
+
