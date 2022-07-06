@@ -22,3 +22,18 @@ SELECT
 FROM
     employees
 WHERE first_name IN ('Denis','Elvis');
+
+
+-- LIKE // NOT LIKE [Find patterns] + % 
+SELECT 
+    *
+FROM
+    employees
+WHERE first_name LIKE ('%Mar') ;
+
+-- LIKE // NOT LIKE [Find patterns] + _ "Specify the length"
+SELECT 
+    *
+FROM
+    employees
+WHERE first_name NOT LIKE ('Mar__') ;
